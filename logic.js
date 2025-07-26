@@ -16,7 +16,10 @@ async function loadFiles() {
         const item = document.createElement("div");
         item.className = "file-item";
         item.innerHTML = `
-          <div>${file.name}</div>
+          <div>
+            <img src="fileicon.png" alt="fileicon">
+            <p>${file.name}</p>
+          </div>
           <a class="download" href="${file.url}" target="_blank">Download</a>
         `;
         list.appendChild(item);
